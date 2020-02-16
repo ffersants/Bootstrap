@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgb(220, 194, 243);
+        }
+
+        nav{
+            background-color: black;
+            text-align: center;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        span#a{
+            color: white;
+            letter-spacing: 0.3em;
+        }
+
+        img{
+            padding-bottom: 10px;
+        }
+
+        section{
+            padding: 50px;
+        }
+
+        span[class="h1"]{
+            background: rgb(102, 101, 101);
+            color: white;
+        }
+
+
+    </style>    
+    <title>Document</title>
+
+</head>
+<body style="margin:50px; border: black 2px groove;">
+<!-- sticky-top, elemento fica fixo no topo assim que chega ao limite superior do viewport -->
+    <nav class="sticky-top text-center">
+        <img width="80px" src="../Aula 104/img/bootstrap-logo.png" alt="">
+        <span class="display-4 monospace text-center" id="a">Bootstrap</span>
+    </nav>
+
+    <section>
+        <!-- display chama mais atenção do que h1 -->
+            <h1 class="display-1 text-monospace text-capitalize text-md-center lead">Hello world!first</h1>
+            <!-- monospace era um padrão de letras usado em máquinas de escrever,
+            onde todos os caracteres possuem uma MESMA LARGURA -->
+            <h1 class="display-2 text-md-center ">Hello world!second</h1>
+            <h1 class="display-3 text-md-center">Hello world!third</h1>
+            <h1 class="display-4 text-md-center">Hello world!fourth</h1>
+            <h1 class="display-5 text-uppercase text-md-center">Hello world!fifth</h1>
+        <!-- display chama mais atenção do que h1 -->
+                <hr>
+            <span class="h1"> It's a span with a h1 class. It's still an inline element. To change it, use class="d-block" or "d-inline-block</span>
+                <hr>
+        <!-- num viewport maior ou igual a 768, o texto fica à direita,
+        por padrão determinado em text-center ele fica centralizado, portanto
+        é necessário setar xg-right também para que ao chegar no tamanho
+        de 1200px pra cima (que é o XG), o texto não fique centralizado. -->
+            <P class="text-center text-md-right text-xg-right monospace font-weight-bolder">font-weight-bolder</P>
+            <p class="lead text-center text-md-right text-xg-right font-italic">font-italic</p>
+            <p class="lead text-center text-md-right text-xg-right font-normal">font-normal</p>
+        <!-- // -->
+            <hr>
+            <blockquote class="blockquote text-center text-md-right text-xg-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Laudantium similique ut natus repellat, eius, architecto consequuntur labore libero nihil fugiat, expedita veniam 
+                ipsam voluptate ipsum sapiente fugit quo! Doloribus, voluptatibus!
+                </p>
+                <footer class="blockquote-footer"> Por
+                    <cite>
+                        Fernando Ferreira
+                    </cite>
+                </footer>
+            </blockquote>
+            <hr>
+            <ul class="list-inline text-center font-weight-bolder">
+                <li class="list-inline-item">IT</li>
+                <li class="list-inline-item">IS</li>
+                <li class="list-inline-item">A</li>
+                <li class="list-inline-item">LIST</li>
+                <br>
+                <li class="list-inline-item">ul class="list-inline" li class="list-inline-item"</li>
+            </ul>
+    </section>        
+</body>
+</html>
