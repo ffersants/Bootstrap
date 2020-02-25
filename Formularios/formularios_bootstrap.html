@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Formulários com Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html{
+            background-color:rgb(222, 223, 228)!important;
+        }
+
+        body{
+            padding: 80px;
+            box-sizing: border-box;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  </head>
+  <body>
+      <!-- 
+          form-group is default for almost every single div
+          and form-control is the same for almost every single input
+       -->
+    <form action="">
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input type="text" class="form-control" placeholder="Digite seu usuário" id="usuario">
+        </div>
+
+        <div class="form-group">
+            <label for="senha_input">Senha</label>
+            <input type="password" class="form-control" placeholder="Digite sua senha" id="senha_input">
+            <small>
+                <a href="">Esqueci minha senha</a>
+            </small>
+            <br>
+            <button class="mt-2 btn btn-dark">Entrar</button>
+        </div>
+
+        <div class="form-group">
+            <label for="select">Estados</label>
+            <select class="form-control" id="select">
+                <option value="">Brasília</option>
+                <option value="">São Paulo</option>
+                <option value="">Belo Horizonte</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">Maranhão</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" placeholder="Leave your message here!" id="mensagem"></textarea> 
+        </div>
+
+        <div class="custom-file"><!--cursor:pointer iserted on bootstrap.css-->
+          <label class="custom-file-label" for="file_input">Selecione o arquivo</label>
+          <input type="file" class="custom-file-input" id="file_input">
+          <small id="helpId" class="text-muted">Tamanho máximo suportado: 1GB</small>
+        <!--to change the "Browser" text, go to bootstrap.css file and look for "..custom-file-label::after", usually on line 3716, change the value of the property "content" from "browser" to "whatever u want"-->
+        </div>
+    
+        <div class="form-group">
+            <label for="range_né"></label>
+            <input type="range" name="" min="1" max="20" step="2" id="range_né" class="custom-control">
+        </div>
+        
+        <div class="form-inline">
+            <input required type="text" id="usuario_login" class="is-valid mr-2 form-control usuario_login" placeholder="Usuário">
+                <!-- if (input do usuário = válido) {
+                        $user = _IEGetObjByClass($page, "usuario_login") 
+                        _IEDocWriteHTML($user, "is-valid", beforend)
+                    ElseIf
+                        $user = _IEGetObjByClass($page, "usuario_login") 
+                        _IEDocWriteHTML($user, "is-invalid", beforend)
+                    }
+                    endIf
+                -->          
+            <input required type="password" name="" id="senha_login" class="is-invalid mr-2 form-control usuario_login_password" placeholder="Senha">
+                <!-- if (input do usuário = válido) {
+                        $user_password = _IEGetObjByClass($page, "usuario_login_password") 
+                        _IEDocWriteHTML($user_password, "is-valid", beforend)
+                    ElseIf
+                        $user = _IEGetObjByClass($page, "usuario_login_password") 
+                        _IEDocWriteHTML($user_password, "is-invalid", beforend)
+                    }
+                    endIf
+                -->
+            <button class="btn btn-primary">Entrar</button>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="nome-de-usuario">Nome de Usuário</label>
+                <input required class="form-control is-invalid" type="email" name="" id="nome-de-usuario">
+                <div class="invalid-feedback">input:is-invalid div:invalid-feedback</div>
+            </div>
+
+            <div>
+                <label for="senha-de-usuario">Senha</label>
+                <input required type="password" name="" id="senha-de-usuario" class="form-control is-valid">
+                <div class="valid-feedback">input:isvalid div:valid-feedback</div>
+            </div>
+
+            <button class="btn btn-warning">Entrar</button>
+        </div>
+    
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
