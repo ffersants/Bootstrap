@@ -14,6 +14,7 @@ body{
     margin-bottom: 80px;
     border-radius: 1em;
     height: 100%;
+    min-width: 340px;
 }
 
 nav{
@@ -23,8 +24,9 @@ nav{
 }
 
 h3{
-    display: inline;
-}
+    display: inline-flex;
+    flex-wrap: nowrap;
+}   
 
 #formulario{
     margin-top: 70px;
@@ -33,25 +35,7 @@ h3{
     padding: 30px;
 }
 
-@media (max-width: 672px){
-    .aumentar_width{
-        width: 100%;
-    }
-    
-    h3{
-        font-size: 36px;
-        text-align: center;
-    }
 
-    #formulario{
-        padding: 0;
-    }
-
-    img{
-        display: none;
-
-    }
-}
 
 input[type="submit"]{
     margin: 0 auto;
@@ -79,4 +63,45 @@ input[type="submit"]{
 
 h2{
     display: none;
+}
+
+input{
+    cursor: pointer!important;
+}
+
+div[class="card"]{
+    border: none!important;
+    background-color: #f8d7da;
+}
+
+div.card>img{
+    width: 500px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 1.2em;
+}
+
+@media (max-width: 672px){
+    .aumentar_width{
+        width: 100%;
+    }
+    
+    h3{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #formulario{
+        padding: 0;
+    }
+
+    img{
+        display: none;
+    }
+
+    #imagein{
+        display: none;
+    }
+
 }
