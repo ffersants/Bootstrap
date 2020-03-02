@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="style_loginPage.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">   
+</head>
+  <body>
+
+    <div id="alert-error" class="alert alert-danger alert-dismissible" >
+        <button class="close" type="button" data-dismiss="alert">
+            &times;
+        </button>
+        
+        <h3>Erro</h3>
+        <p>
+            Pedimos desculpas, estamos enfrentando alguns problemas no momento. Tente novamente mais tarde.
+        </p>
+    </div>
+
+    <div id="container">
+        <nav>
+            <h3 class="display-4">Faça seu cadastro</h3>
+            <img src="images/perfil.png" alt="" class="img-responsive">
+        </nav>
+
+        <div id="formulario">
+            <fieldset>
+                <form class="container" action="">
+                    
+                    <div class="row">
+                        <div id="div_nome" class="form-group col">
+                            <label for="name">Nome</label>
+                            <input required  type="text" name="" id="name nome" class="form-control">                      
+                        </div>
+
+                        <div class="aumentar_width"></div>
+
+                        <div class="form-group col" id="div_sobrenome">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input required  type="text" name="" id="sobrenome" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="password">Digite sua senha</label>
+                            <input  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                type="password" name="" id="password" class="is-invalid form-control">
+                            <small>
+                                No mínimo 8 caracteres, entre letras maiúsculas, minúsculas, números e caracteres especiais.
+                            </small>
+                        </div>
+
+                        <div class="aumentar_width"></div>
+                            
+                        <div class="col form-group">
+                            <label for="repeat-password">Repita sua senha</label>
+                            <input required   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                type="password" name="" id="repeat-password" class="is-valid form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col form-group">
+                            <label for="numero">Número para contato</label>
+                            <input type="tel" placeholder="Ex.: (DDD) 9 XXXX-XXXX"  name="" id="numero" class="form-control">
+                        </div>
+
+                        <div class="aumentar_width"></div>
+
+                        <div class="col form-group">
+                            <label for="" class="">Foto para perfil</label>
+                                
+                            <div class="custom-file form-control">
+                                <label for="" class="custom-file-label">Escolher arquivo</label>
+                                <input type="file" class="custom-file-input">
+                            </div>
+                            <div class="progress" style="margin-top: 5px">
+                                <div style="width: 85%; font-weight: bold;" class="progress-bar bg-warning progress-bar-animated progress-bar-striped">
+                                    Carregando... 85%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="row">
+                        <div class="col form-group">
+                            <label for="email" class="">Digite seu email</label>
+
+                            <div class="input-group">
+                                <input required type="text" name="" id="email" class="form-control">
+                                    <div class="input-group-append">
+                                        <select class="input-group-text" name="" id="kasp">
+                                            <option value="@gmail.com">@gmail.com</option>
+                                            <option value="@homail.com">@homail.com</option>
+                                            <option value="@yahoo.com.br">@yahoo.com.br</option>
+                                        </select>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <input type="submit" value="Enviar" class="btn">
+                
+                </form>
+
+            </fieldset>
+        </div> <!--fim do formulario-->
+    </div>
+
+    <h2>asdfasdf</h2>
+    <h2>Um head</h2>
+    <h2>Dois head</h2>
+    <h2>Last head</h2>
+    
+    <script>
+        var headings = document.evaluate("/html/body//h2", document); 
+        /* Search the document for all h2 elements.  
+        * The result will likely be an unordered node iterator. */
+        var thisHeading = headings.iterateNext(); 
+        var alertText = "Level 2 headings in this document are:\n";
+        while (thisHeading) {
+        alertText += thisHeading.textContent + "\n";
+        thisHeading = headings.iterateNext();
+        }
+        alert(alertText + "And they are all hiden."); // Alerts the text of all h2 elements
+
+        var full_email = document.getElementById("email").value + document.getElementById("kasp").value
+
+    </script>
+   
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
