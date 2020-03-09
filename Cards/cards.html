@@ -5,49 +5,258 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <style>  
+              .container-background{
+                position: fixed;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                background-image: url(https://source.unsplash.com/random);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
 
+                -webkit-filter: blur(px);
+                -moz-filter: blur(15px);
+                -o-filter: blur(15px);
+                -ms-filter: blur(15px);
+                filter: blur(4px);
+            }
+
+            .container-geral{ 
+              margin: 0 auto;
+              width: 95%;
+              padding-top: 20px;
+            }
+
+            blockquote{
+              box-sizing: border-box;
+              padding: 5px 5px 5px 5px;
+            }
+
+            cite{
+              text-align: right;
+              display: block;
+              margin-right: 10px;
+            }
+
+            .jumbotron{
+              padding: 1.2rem!important;         
+              
+            }
+
+            h4{
+              font-size: 2.5rem;
+              font-weight: 300;
+              line-height: 1.2;
+            }
+
+            footer{
+              width: 100%;
+              border-top-right-radius: 1em;
+              border-top-left-radius: 1em;
+              /* background: linear-gradient( grey 70%, white 30%); */
+              font-family: cursive;
+              text-align: center; 
+            }
+
+            footer div{
+              padding: 5px;
+            }
+
+            footer p{
+              margin: 0;
+              color: white;
+            }
+
+            i{
+              font-size: 25px;
+              color: black;
+            }
+
+            li[class="nav-item"] a{
+              font-size: 18px;
+            }
+            
+            li a:hover{
+              border-bottom: burlywood 3px solid;
+            }
+                        
+            @media (min-width: 576px){
+              #to-hide{
+                display: none;
+              }
+              #getlittle{
+                font-size: 7px;
+              }
+            }
+
+            @media (max-width: 577px){
+              #collapsed-to-hide{
+                display: none;
+              }
+              
+              h4{
+                font-size: 2.5rem!important;
+              }
+              
+              #getlittle{
+                font-size: 14px!important;
+              }
+            }
+
+
+    </style>
+  
+  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
   </head>
+ <!-- intreasting quote generator to take a look sometime https://codepen.io/kkoutoup/pen/zxmGLE -->
   <body>
+    
+    
 
-      <div class="card">
-        <div class="card-body">
-         
-          <img src="https://source.unsplash.com/random" class="card-img">
-          <div class="card-img-overlay">
-          
-            <h1 class="text-center card-title">Does a single page application looks like this?</h1>
-          
-              <nav class="card-header ">
-                <ul class=" nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a href="cards.html" class="nav-link">Page1</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="cards.html" class="nav-link">Page 2</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="cards.html" class="nav-link">Page 3</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="cards.html" class="nav-link">Page 4</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="cards.html" class="nav-link">Page</a>
-                  </li>
-                </ul>
-              </nav>
-
-          </div>
-        </div>
+    <div class="container-background">
       </div>
 
+      <div class="container-geral ">
+        
+     <nav class="row navbar navbar-expand-sm bg-light navbar-light jumbotron">    
+       
+        
+            <div class="navbar-brand ">
+                <h4 class="display-4 ">
+                  Quote's page
+                </h4>
+                <small id="collapsed-to-hide">The page you've been waiting for. We give you... INSPIRATION!</small>
+            </div>   
+            
+
+
+            <button data-toggle="collapse" class="btn-light bg-light navbar-toggler collapsed" data-target="#menu"><!--
+                navbar-target, item that will be shown and disappeared when button is clicked
+              navbar-toggler to disappear the button when navbar is extended-->
+                <span class="navbar-toggler-icon"> <!--ICON!! Don't forget it-->
+            </button>
+            <small id="to-hide" style="font-size: 16px;">The page you've been waiting for. We give you... INSPIRATION!</small>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="navbar-nav list-group">
+                <li class="nav-item">
+                  <a href="" class="nav-link">Articles</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">API</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">About us</a>
+                </li>
+              </ul>
+              
+            </div>   
+                           
+        </nav>
+
+      <div class="card-columns" style="margin: 0 auto;">
+
+        <div class="card border-primary"  data-aos="fade-up">
+            <img src="https://source.unsplash.com/random/a" alt="" class="card-img-top">
+            <blockquote class="card-title">
+              Com organização e tempo, acha-se o segredo de fazer tudo e bem feito.
+            </blockquote>
+            <cite>PITÁGORAS</cite>
+        </div>
+
+        <div class="card border-primary" data-aos="fade-up">
+          <img src="https://source.unsplash.com/random/b" alt="" class="card-img-top">
+           <blockquote >
+            Uma boa dose de confusão é uma confição que precede o pensamento independente.
+          </blockquote> 
+          
+          <cite> HAYEK</cite>
+          
+        </div>
+
+        <div class="card border-primary" data-aos="fade-up">
+          <img src="https://source.unsplash.com/random/c" alt="" class="card-img-top">
+          <blockquote class="card-title">
+            Todo especialista tem sua corcunda.
+          </blockquote>
+
+          <cite>NIETZSCHE</cite>
+        </div>
+      <!-- </div>  fim do card-columns -->
+
+      <!-- <div class="card-columns"> -->
+
+        
+        <div class="card border-primary" data-aos="fade-up">
+          <img src="https://source.unsplash.com/random/d" alt="" class="card-img-top">
+          <blockquote class="card-title">
+            As palavras pertencem metade a quem fala, metade a quem ouve.
+          </blockquote>
+
+          <cite>MONTAIGNE</cite>
+        </div>
+
+        <div class="card border-primary" data-aos="fade-up">
+          <img src="https://source.unsplash.com/random/e" alt="" class="card-img-top">
+          <blockquote class="card-title">
+            As frases que os homens estão acostumados a repetir incessamente acabam se tornando convicções e ossificando os órgaos da inteligência.
+          </blockquote>
+
+          <cite>GEORGE LEWES</cite>
+        </div>
+
+        <div data-aos="fade-up" class="card border-primary">
+          <img src="https://source.unsplash.com/random/f" alt="" class="card-img-top">
+          <blockquote class="card-title">
+            Dê a um homem tudo o que ele deseja, e ele, apesar disso, naquele mesmo momento, sentirá que esse tudo não é tudo.
+          </blockquote>
+          <cite>KANT</cite>
+        </div>
+
+      </div> <!--  fim do card-columns -->
+    
+    </div>
+  
+    <footer class="w-100" style="background-color: burlywood;">
+      <div class="">
+        <h4 id="getlittle" style="color: white;">LTDA Imdustries &copy; page made by, MY TRAININGS</h4>
+        <p>Date: 08/03/2020 01:31 am</p>
+      </div>
+      <a href=""></a>
+
+      <div>
+        <a href="https://instagram.com/ffersants">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://twitter.com/ffersants">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
+    <script src="aos-master/dist/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        duration: 1200,
+      });
+    </script>    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
