@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* essencial para o parallax */
+html, body{
+    height: 100%;
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;    
+}
+
+/* essencial para o parallax, daqui em diante, basta criar as divs com bkg-img */
+
+/* sobreposição de filtros com background para o parallax */
+.capa-filtro{
+    background-image: linear-gradient(50deg, #ff4169,#7c26f8) ;  
+    opacity: 1;
+    z-index: 10;
+}
+
+.capa-ruido{
+    background-image: url(../images/ruido.png);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.capa-imagem{
+    background-image: url(../images/capa.png);
+    background-repeat: repeat;  
+    z-index: 50;
+}
+/* sobreposição de filtros com background para o parallax */
