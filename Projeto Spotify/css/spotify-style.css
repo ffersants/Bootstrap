@@ -33,3 +33,40 @@ html, body{
     z-index: 50;
 }
 /* sobreposição de filtros com background para o parallax */
+
+/* barra de navegação fixa - topo */
+nav{
+    z-index: 200;
+}
+
+#container-fluid-navergacao{
+    background-color: rgb(12, 12, 12,0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#menu-navegacao a{
+    color: white;
+    font-size: 17px;
+}
+/* barra de navegação fixa - topo */
+
+#slogan{
+    color: white;
+    font-weight: bold;
+}
+
+#btn-roxo{
+    background-color: #7c25f8;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: ease 0.3s;
+}
+
+#btn-roxo:hover{
+    background-color: #5902fa;
+    transition: ease 0.3s;
+}
+
