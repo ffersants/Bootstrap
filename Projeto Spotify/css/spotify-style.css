@@ -3,8 +3,15 @@
     margin: 0;
 }
 /* essencial para o parallax */
-html, body{
+html, body, #home{
     height: 100%;
+}
+
+body{
+    background-image: url(../images/capa.png),
+                      url(../images/ruido.png),
+                      linear-gradient(30deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
 }
 
 .parallax{
@@ -12,6 +19,18 @@ html, body{
     background-attachment: fixed;    
 }
 
+#agá-1, h1, h2{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    color:rgb(33, 37, 41);
+    font-weight: 400;
+    font-size: 18px;
+}
 /* essencial para o parallax, daqui em diante, basta criar as divs com bkg-img */
 
 /* sobreposição de filtros com background para o parallax */
@@ -41,8 +60,6 @@ nav{
 
 #container-fluid-navergacao{
     background-color: rgb(12, 12, 12,0.9);
-    position: fixed;
-    top: 0;
     z-index: 10;
 }
 
@@ -50,23 +67,111 @@ nav{
     color: white;
     font-size: 17px;
 }
-/* barra de navegação fixa - topo */
 
-#slogan{
+#separador{
+    background-color: white;
+    width: 1px;
+    margin: 10px 15px;
+}
+.navbar-button-toggler{
+    border-color: rgb(2550, 255, 255,0.9);
+}
+
+
+/* tela 1 */
+
+#agá-1{
+    margin-bottom: 50px;
+}
+
+div.col-md-12 a{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 500px;
     color: white;
-    font-weight: bold;
 }
 
 #btn-roxo{
     background-color: #7c25f8;
-    cursor: pointer;
-    color: white;
-    text-transform: uppercase;
-    transition: ease 0.3s;
+    /* transition: ease 0.3s; */
+
 }
 
 #btn-roxo:hover{
     background-color: #5902fa;
     transition: ease 0.3s;
+    color: white;    
 }
 
+/* /tela 1 */
+
+/* tela 2 */
+
+#tela2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+#tela2 h1{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #7c25f8;
+}
+
+#description h2{
+    color: #7c25f8;
+    font-weight: bolder;
+}
+
+/* tela 3 */
+
+#tela3{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#tela3 h1{
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: Arial, Helvetica, sans-serif;
+}
+
+#tela3 h2{
+    color:rgb(155, 240, 225);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.tela3-paragraph{
+    color: white;
+}
+
+#tela3-div2{
+    transform: rotateZ(30deg);
+}
+
+
+/* rodapé */
+
+#rodape{
+    background-color: black;
+}
+
+#rodape-container{
+    z-index: 500;
+}
+
+#footer-list a{
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+#rodape p{
+     color: rgb(148, 145, 150);
+     text-transform: uppercase;
+}
