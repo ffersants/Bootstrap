@@ -4,7 +4,38 @@
 }
 
 
-
+/* barra de navegação */
 #logo{
-    width: 150px;
+    width: 120px;
+}
+
+nav a{
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+#text{
+    font-size: 2.6em;
+}
+
+#capa-mulher{
+    width: 350px;
+}
+
+@media (max-width: 600px){ 
+    #capa-mulher{
+        display: none;
+    } 
+
+    #text-left-capa-mulher{
+        width: 100%;
+    }
+
+}
+
+
+
+footer a{
+    text-decoration: none!important;
+
 }
