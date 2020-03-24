@@ -15,39 +15,46 @@
 </head>
   <body>
       <div class="container-fluid bg-warning">
-            <nav class="navbar navbar-expand-sm" style="border: 1px solid green;"><!--withou navbar an navbar-expand, the list won't be displayed inline-->
-                <a href="">
-                    <img src="images/logo.png" id="logo" class="navbar-brand">
-                </a>
-
-                <button data-toggle="collapse" data-target="#menu-de-navegacao" class="navbar-toggler">
-                    <span class="bg-dark navbar-toggler-icon"></span>
-                </button>
-
-                <div id="menu-de-navegacao" class="collapse navbar-collapse"><!--collapse navbar-collapse-->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Recursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Benefícios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Preços</a>
-                        </li>
+            <nav class="navbar navbar-expand-sm row" style="border: 1px solid green;"><!--withou navbar an navbar-expand, the list won't be displayed inline-->
+               
+                <div class="col-12">
+                    <a href="">
+                        <img src="images/logo.png" id="logo" class="navbar-brand">
+                    </a>
+    
+                    <button data-toggle="collapse" data-target="#menu-de-navegacao" style="font-size: 25px; border: 1px solid; opacity: 1em;" class="fa fa-bars navbar-toggler">
                         
-                    </ul>    
-                    
-                    <button class="btn btn-warning btn-outline-light ml-4">
-                        Entrar
                     </button>
+    
+                    <div id="menu-de-navegacao" class="collapse navbar-collapse"><!--collapse navbar-collapse-->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Recursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Benefícios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Preços</a>
+                            </li>
+                            
+                        </ul>    
+                        
+                        <button class="btn btn-warning btn-outline-light ml-4">
+                            Entrar
+                        </button>
+                    </div>
                 </div>
 
+                <div class="col-4">
+                    <h4 class="display-4" style="color: white;">Suas contas, descomplicadas</h4>
+
+                </div>
                 
-            </nav>         
+            </nav>
       </div>
 
     <!-- Optional JavaScript -->
