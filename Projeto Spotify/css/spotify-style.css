@@ -3,6 +3,7 @@
     margin: 0;
 }
 /* essencial para o parallax */
+/* parallax feito apenas com sobreposição de backgrounds */
 html, body, #home{
     height: 100%;
     overflow-x: hidden;
@@ -15,7 +16,7 @@ body{
                       linear-gradient(30deg,#ff4169,#7c26f8);
     background-attachment: fixed;
 }
-
+/* /parallax feito apenas com sobreposição de backgrounds */
 .parallax{
     height: 100vh;
     background-attachment: fixed;    
