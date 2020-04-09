@@ -1,8 +1,23 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    #agá-1{
+        font-size: 3em; 
+     }
+    
     div.col-md-12 a{
         margin: 10px;   
      }
+
+     #iphone1,#iphone2{
+        display: none;
+    }
+    #footer-list p{
+        margin-bottom: 20px;
+    }
+
+    #logos ul{
+        float: left;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -10,9 +25,15 @@
     #agá-1{
         font-size: 3em; 
      }
+     
      div.col-md-12 a{
         margin: 10px;   
-     }
+    }
+
+    
+    #iphone1,#iphone2{
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -20,12 +41,19 @@
     #agá-1{
         font-size: 4em; 
      }
+     #iphone1,#iphone2{
+        width: 220px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     #agá-1{
         font-size: 5em; 
+     }
+
+     #iphone1,#iphone2{
+         width: 300px;
      }
 }
 

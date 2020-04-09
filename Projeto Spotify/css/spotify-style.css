@@ -5,6 +5,8 @@
 /* essencial para o parallax */
 html, body, #home{
     height: 100%;
+    overflow-x: hidden;
+    /*oculta a barra horizonta de rolagem*/
 }
 
 body{
@@ -82,6 +84,7 @@ nav{
 
 #agá-1{
     margin-bottom: 50px;
+    color: white;
 }
 
 div.col-md-12 a{
@@ -162,13 +165,24 @@ div.col-md-12 a{
 }
 
 #rodape-container{
-    z-index: 500;
+    z-index: 5;
 }
 
-#footer-list a{
-    color: white;
-    display: block;
-    padding: 5px;
+#rodape-container a{
+    margin-right: 100%;
+}
+
+
+#logos li{
+    display: inline;
+    float: right;
+    padding: 10px;
+}
+
+
+#footer-list a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
 }
 
 #rodape p{
